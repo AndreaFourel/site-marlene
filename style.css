@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
+
+:root {
+  --main-bg-color: #C6B4CE;
+  --second-bg-color: #9B72AA;
+  --text-light-color: #FFF5DE;
+  --text-dark-color: #3C5186;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 1em;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  font-family: 'Hind Siliguri', sans-serif;
+  min-width: 290px; 
+  position: relative;
+}
+
+/*header*/
+
+
+.logo{
+  width: 50px;
+  border-radius: 50%;
+}
+
+.logo-txt, .nav-link {
+  color: var(--text-dark-color);
+  
+}
+
+.navbar-toggler-icon {
+  color: var(--text-dark-color);
+}
+
+#header{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--main-bg-color);
+}
+
+.intro {
+  background-image: url(images/mandala-bg.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position-x: 25%;
+  background-position-y: 60%;
+  width: 95vw;
+  height: 95vh;
+  margin: auto;
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.intro-txt {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  margin-right: 10%;
+}
+
+h1.big-title {
+  color: var(--text-light-color);
+  font-size: 3rem; 
+  line-height: 4rem;
+}
+
+h2.big-title{
+  color: var(--main-bg-color);
+  font-size: 2.5rem;
+  margin-top: 15%;
+  line-height: 3rem;
+}
+
+h1, h2 {
+  font-family: 'Laila', sans-serif;
+ 
+}
+
+

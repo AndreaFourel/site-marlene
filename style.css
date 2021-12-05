@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
 
 :root {
   --main-bg-color: #C6B4CE;
@@ -11,6 +14,7 @@
 
 * {
   box-sizing: border-box;
+
 }
 
 html{
@@ -19,9 +23,17 @@ html{
 
 body {
   background-color: var(--main-bg-color);
-  font-family: 'Hind Siliguri', sans-serif;
   min-width: 290px; 
   position: relative;
+}
+
+p{
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 /*header*/
@@ -29,13 +41,15 @@ body {
 
 .logo{
   width: 50px;
-  border-radius: 50%;
+  border-radius: 50%;  
 }
 
 .logo-txt, .nav-link {
   color: var(--text-dark-color);
-  
+  font-family: 'Bad Script', cursive;
+  font-weight: bolder;
 }
+
 
 .navbar-toggler-icon {
   color: var(--text-dark-color);
@@ -46,7 +60,11 @@ body {
   top: 0;
   z-index: 100;
   background-color: var(--main-bg-color);
+  background-color: transparent;
+  border-radius: 0 0 10px 10px;
 }
+
+/*about-aymassage section*/
 
 .intro {
   background-image: url(images/mandala-bg.jpg);
@@ -54,12 +72,15 @@ body {
   background-size:cover;
   background-position-x: 25%;
   background-position-y: 60%;
+  box-shadow: 2px 2px 4px #000;
   width: 95vw;
-  height: 95vh;
+  height: 91.5vh;
   margin: auto;
   border-radius: 20px;
   display: flex;
   justify-content: flex-end;
+  padding: 1%;
+  margin-bottom: 2%;
 }
 
 .intro-txt {
@@ -70,22 +91,143 @@ body {
   margin-right: 10%;
 }
 
-h1.big-title {
+.big-title {
   color: var(--text-light-color);
   font-size: 3rem; 
   line-height: 4rem;
+  margin-bottom: 30%;
+  font-weight:500;
 }
 
 h2.big-title{
   color: var(--main-bg-color);
-  font-size: 2.5rem;
-  margin-top: 15%;
-  line-height: 3rem;
 }
 
 h1, h2 {
-  font-family: 'Laila', sans-serif;
- 
+  font-family: 'Bad Script', cursive;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.presentation {
+  position: relative;
+  width: 100vw;
+  height:fit-content;
+  margin-top: 10%;
+  overflow: hidden;
+  margin-bottom: 5%;
+}
+
+.presentation-2{
+  overflow: hidden;
+  position: relative;
+  margin: 0 2%;
+  text-align: center;
+}
+.presentation-2-txt{
+  font-weight: 500;
+  position: relative;
+  z-index: 2;
+}
+.presentation-2 h2{
+  margin: 0 0 5% 0;
+}
+
+.about-txt{
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0 22%;
+  text-align: center;
+}
+.about-title{
+  font-size: 2.5rem;
+  padding: 0 20%;
+  text-align: center;
+}
+/*about-aymassage section-images*/
+
+img{  
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px #000;
+}
+.about-img{
+  width:30%
+}
+.about-img-lg{
+  width: 40%;
+}
+
+.img-1{
+  position: relative;
+  left: 53%;
+}
+.img-2{
+  position: absolute;
+  left: 76%;
+  top: 8%;
+}
+.img-3{
+  position: absolute;
+  bottom: 15%;
+  right: 80%;
+  z-index:2;
+}
+.img-4{
+  position: relative;
+  right: 2%;
+  top: 30px
+}
+
+.presentation-2-txt-bg-img{
+  position: absolute;
+  left: 0;
+  top: 25%;
+  width: 100%;
+  height: auto;
+  opacity: 0.16;
+  box-shadow: unset;
+}
+
+.between-section-img{
+  margin: 7% 0;
+  width: 100vw;
+}
+
+/*prices section*/
+
+#prices{
+  background: var(--second-bg-color);
+  box-shadow: 2px 2px 4px black;
+  padding: 3%;
+  border-radius: 20px;
+}
+
+.card{
+  background-color: var(--main-bg-color);
+  box-shadow: 2px 2px 4px #000;
+}
+.card-body{
+  background-color: var(--main-bg-color);
+}
+.card-text{
+  font-weight: 200;
+}
+
+/*price section-images*/
+
+.card-img-top{
+ border-radius: unset;
+ width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  
+  .big-title {
+    font-size: 5rem;
+    line-height: 6rem;
+    margin-bottom: 20%;
+  }
+
 }
 
 

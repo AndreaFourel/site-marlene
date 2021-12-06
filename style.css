@@ -14,7 +14,16 @@
 
 * {
   box-sizing: border-box;
+}
 
+a {
+  color: var(--text-dark-color);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a:hover{
+  color: var(--text-light-color);
 }
 
 html{
@@ -25,15 +34,21 @@ body {
   background-color: var(--main-bg-color);
   min-width: 290px; 
   position: relative;
+  color: var(--text-dark-color);
 }
 
 p{
   font-family: 'Hind Siliguri', sans-serif;
+  color: var(--text-dark-color);
 }
 
 ul {
   list-style: none;
   padding-left: 0;
+}
+
+.not-bold{
+  font-weight: 300;
 }
 
 /*header*/
@@ -103,10 +118,15 @@ h2.big-title{
   color: var(--main-bg-color);
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: 'Bad Script', cursive;
   font-weight: bolder;
   font-size: 2rem;
+  margin: 2% 0;
+}
+
+h3{
+  font-size: 1.2rem;
 }
 
 .presentation {
@@ -148,7 +168,7 @@ h1, h2 {
 
 img{  
   border-radius: 10px;
-  box-shadow: 2px 2px 4px #000;
+  box-shadow: 1px 1px 2px #000;
 }
 .about-img{
   width:30%
@@ -184,40 +204,97 @@ img{
   top: 25%;
   width: 100%;
   height: auto;
-  opacity: 0.16;
+  opacity: 0.13;
   box-shadow: unset;
 }
 
 .between-section-img{
-  margin: 7% 0;
-  width: 100vw;
+  border-radius: 0 50%;
+  margin: 7% 2%;
+  width: 95vw;
 }
 
 /*prices section*/
 
 #prices{
-  background: var(--second-bg-color);
+  /*
+  background-image: url('images/mandala-bg.jpg');
+  background-position-x: 60%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  */
+  background-color: var(--second-bg-color);
   box-shadow: 2px 2px 4px black;
   padding: 3%;
   border-radius: 20px;
 }
 
+.prices-title{
+  /*color: var(--text-light-color);*/
+}
+
 .card{
   background-color: var(--main-bg-color);
-  box-shadow: 2px 2px 4px #000;
+  border: none;
+  border-radius: 50% 10px 10px 10px;
+  overflow: hidden;
 }
 .card-body{
   background-color: var(--main-bg-color);
 }
 .card-text{
-  font-weight: 200;
+  font-weight: 300;
+  height: 100px;
 }
 
 /*price section-images*/
 
 .card-img-top{
  border-radius: unset;
- width: 100%;
+ height: 200px;
+ border-radius: 50% 0 0;
+ object-fit: cover;
+ box-shadow: none;
+}
+
+/*about-me section*/
+
+#about-me, #contact{
+  margin: 5% 3%;
+  text-align: center;
+}
+
+/*about-me section-imgages*/
+
+.marlene-haidopoulo{
+  border-radius: 50%;
+  width: 30%;
+}
+
+/*footer*/
+
+footer{
+  background:var(--second-bg-color);
+  margin: 0;
+  padding: 1%;
+  box-shadow: 2px 2px 4px black;
+}
+
+.socials{
+  display: flex;
+  justify-content: center;
+}
+
+.socials>.social-link{
+  margin: 2%;
+  padding:1%;
+}
+
+.copyright{
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 2%;
+  padding: 1%;
 }
 
 @media screen and (min-width: 768px) {

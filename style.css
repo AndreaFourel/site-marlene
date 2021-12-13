@@ -87,12 +87,12 @@ ul {
 /*about-aymassage section*/
 
 .intro {
-  background-image: url(images/mandala-bg.jpg);
+  background-image: url(images/mandala-background.jpg);
   background-repeat: no-repeat;
   background-size:cover;
   background-position-x: 25%;
   background-position-y: 60%;
-  box-shadow: 2px 2px 4px #000;
+  box-shadow: 1px 1px 2px #000;
   width: 95vw;
   height: 90vh;
   margin: auto;

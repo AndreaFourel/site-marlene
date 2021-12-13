@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
-
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
 :root {
   --main-bg-color: #C6B4CE;
   --second-bg-color: #9B72AA;
@@ -39,8 +39,19 @@ p{
   color: var(--text-dark-color);
 }
 
+h1, h2, h3 {
+  font-family: 'Bad Script', cursive;
+  font-weight: bolder;
+  margin: 2% 0;
+}
+
 h1, h2 {
+  font-size: 2rem;
   text-shadow: 0.2px 0.2px 0.5px black;
+}
+
+h3{
+  font-size: 1.2rem;
 }
 
 ul {
@@ -67,8 +78,8 @@ ul {
   text-shadow: 0.2px 0.2px 0.5px black;
 }
 
-
-.navbar-toggler-icon {
+.bi-list {
+  font-size: 2rem;
   color: var(--text-dark-color);
 }
 
@@ -116,22 +127,11 @@ ul {
   font-size: 3rem; 
   line-height: 4rem;
   margin-bottom: 30%;
-  font-weight:500;
+  font-weight: 500;
 }
 
 h2.big-title{
   color: var(--main-bg-color);
-}
-
-h1, h2, h3 {
-  font-family: 'Bad Script', cursive;
-  font-weight: bolder;
-  font-size: 2rem;
-  margin: 2% 0;
-}
-
-h3{
-  font-size: 1.2rem;
 }
 
 .presentation {
@@ -222,8 +222,9 @@ img{
 }
 
 .between-section-img{
+  display: block;
   border-radius: 0 50%;
-  margin: 3% 2%;
+  margin: auto;
   width: 95vw;
 }
 
@@ -239,6 +240,8 @@ img{
 
 .card-body{
   background-image: url('images/background-color.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   color: var(--text-light-color);
 }
 
@@ -261,7 +264,7 @@ img{
 /*about-me section*/
 
 #about-me, #contact, #prices{
-  margin: 5% 3%;
+  margin: 4% 3%;
   text-align: center;
 }
 
@@ -310,7 +313,7 @@ footer{
   background-size: cover;
   margin: 0;
   padding: 1%;
-  box-shadow: 2px 2px 4px black;
+  box-shadow: 1px 1px 2px black;
 }
 
 .af-link {
@@ -336,6 +339,128 @@ footer{
   padding: 1%;
 }
 
+/*media queries*/
+
+@media screen and (min-width: 400px) {
+  
+  .presentation-2-txt-bg-img{
+    top: 20%;
+  }
+
+}
+
+@media screen and (min-width: 453px) {
+  
+  .presentation-2-txt-bg-img{
+    top: 8%;
+  }
+
+  .about-me-txt-background{
+    width: 100%;
+    left: 0;
+  }
+
+  .presentation-2, .about-me-txt, #contact {
+    margin: 4% 7%
+  }
+}
+
+@media screen and (min-width: 574px) {
+
+  .about-img {
+    width: 25%;
+  }
+
+  .about-title{
+    padding: 0 25%;
+  }
+
+  .about-txt{
+    padding: 0 27%;
+  }
+
+  .presentation-2-txt-bg-img, .about-me-txt-background{
+    width: 80%;
+    left: 10%;
+  }
+
+  .marlene-haidopoulo{
+    width: 25%;
+  }
+
+  .between-section-img{
+    width: 90vw;
+    height: 35vh;
+    object-fit: cover;
+    border-radius: 0 60%;
+  }
+}
+
+@media screen and (min-width: 670px) {
+  body{
+    font-size: 1.1rem;
+  }
+  
+  h1, h2 {
+    font-size: 2.2rem;
+ }
+
+  .big-title {
+    font-size: 4rem;
+    line-height: 5rem;
+    margin-bottom: 25%;
+  }
+
+  .about-title{
+    font-size: 2.8rem;
+  }
+
+  .about-txt{
+    font-size: 1.2rem;
+  } 
+
+  .presentation-2-txt-bg-img, .about-me-txt-background {
+    width: 70%;
+    left: 15%;
+  }
+
+  .about-me-txt-background{
+    top: 35%;
+  }
+
+  .card-text{
+    font-size: 1rem;
+  }
+  
+  .presentation-2-txt-bg-img{
+    top: 15%
+  }
+
+  .small-img{
+    width: 6%;
+  }
+
+  .marlene-haidopoulo{
+    width: 20%;
+  }
+
+  .presentation-2, .about-me-txt, #contact{
+    margin: 3% 10%;
+  }
+
+  .between-section-img{
+    width: 80vw;
+  }
+
+  .socials>.bi {
+    font-size: 2rem;
+  }
+
+  .copyright {
+    font-size: 1rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   
   .big-title {
@@ -344,6 +469,65 @@ footer{
     margin-bottom: 20%;
   }
 
+  body{
+    font-size: 1.5rem;
+  }
+  
+  h1, h2 {
+    font-size: 2.5rem;
+ }
+
+ .about-me-txt > h3 {
+   font-size: 2rem;
+ }
+
+ #about-me, #contact, #prices{
+   margin-top: 4%;
+ }
+
+ .about-title{
+  font-size: 2.8rem;
+  padding: 0 30%;
 }
 
+.about-txt{
+  font-size: 1.2rem;
+} 
 
+/*presentation-img*/
+ 
+.presentation {
+  margin-top: 5%;
+}
+
+.about-img{
+  width:20%
+}
+
+.about-img-lg{
+  width: 35%;
+}
+
+.img-1{
+  position: relative;
+  left: 45%;
+}
+
+.img-2{
+  position: absolute;
+  left: 75%;
+  top: 16%;
+}
+
+.img-3{
+  position: absolute;
+  bottom: 25%;
+  right: 76%;
+}
+
+.img-4{
+  position: relative;
+  right: -15%;
+  top: 20px
+}
+}

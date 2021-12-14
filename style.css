@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+
+/*basic*/
+
 :root {
   --main-bg-color: #C6B4CE;
-  --second-bg-color: #9B72AA;
+  --second-bg-color: #9863acf5;
   --text-light-color: #FFF5DE;
   --text-dark-color: #3C5186;
 }
@@ -19,7 +22,7 @@ a {
 }
 
 a:hover{
-  color: var(--text-light-color);
+  color: var(--second-bg-color);
 }
 
 html{
@@ -89,10 +92,15 @@ ul {
   z-index: 100;
   background-color: var(--main-bg-color);
   border-radius: 0 0 10px 10px;
-  /*
+}
+
+.header-shadow {
   margin-bottom: 1%;
   box-shadow: 1px 1px 2px black;
-  */
+}
+
+.nav-link:hover {
+  color: var(--second-bg-color);
 }
 
 /*about-aymassage section*/
@@ -157,7 +165,7 @@ h2.big-title{
 }
 
 .presentation-2 h2{
-  margin: 0 0 5% 0;
+  margin: 0 0 4% 0;
 }
 
 .about-txt{
@@ -224,7 +232,7 @@ img{
 .between-section-img{
   display: block;
   border-radius: 0 50%;
-  margin: auto;
+  margin: 1% auto;
   width: 95vw;
 }
 
@@ -311,7 +319,7 @@ footer{
   background-image: url('images/background-color.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0;
+  margin-top: 4%;
   padding: 1%;
   box-shadow: 1px 1px 2px black;
 }
@@ -337,6 +345,14 @@ footer{
   text-align: center;
   margin: 2%;
   padding: 1%;
+}
+
+.af-link:hover {
+  color: var(--main-bg-color);
+}
+
+.social-link:hover {
+  color: var(--main-bg-color);
 }
 
 /*media queries*/
@@ -433,7 +449,7 @@ footer{
   }
   
   .presentation-2-txt-bg-img{
-    top: 15%
+    top: 18%
   }
 
   .small-img{
@@ -451,7 +467,12 @@ footer{
   .between-section-img{
     width: 80vw;
   }
+  /*footer*/
 
+  .socials>.social-link{
+    margin: 0 2%;
+  }
+  
   .socials>.bi {
     font-size: 2rem;
   }
@@ -459,10 +480,27 @@ footer{
   .copyright {
     font-size: 1rem;
   }
+
 }
 
 @media screen and (min-width: 768px) {
   
+  /*navbar*/
+
+  .logo{
+    width: 70px;
+  }
+  
+  .logo-txt, .nav-link {
+    font-size: 1.5rem;
+  }
+  
+  .bi-list {
+    font-size: 3rem;
+
+  }
+  
+
   .big-title {
     font-size: 5rem;
     line-height: 6rem;
@@ -475,29 +513,35 @@ footer{
   
   h1, h2 {
     font-size: 2.5rem;
- }
+  }
 
- .about-me-txt > h3 {
+  .about-me-txt > h3 {
    font-size: 2rem;
- }
+  }
 
- #about-me, #contact, #prices{
+  #about-me, #contact, #prices{
    margin-top: 4%;
- }
+  }
 
- .about-title{
-  font-size: 2.8rem;
-  padding: 0 30%;
-}
+  .about-title {
+    font-size: 2.8rem;
+    padding: 0 30%;
+  }
 
-.about-txt{
-  font-size: 1.2rem;
-} 
+  .about-txt{
+    font-size: 1.2rem;
+  } 
 
-/*presentation-img*/
+  .between-section-img {
+    width: 50vw;
+    height: fit-content;
+  }
+
+/*presentation-section*/
  
 .presentation {
-  margin-top: 5%;
+  margin-top: 3%;
+  margin-bottom: 0;
 }
 
 .about-img{
@@ -511,7 +555,7 @@ footer{
 .img-1{
   position: relative;
   left: 45%;
-}
+}P
 
 .img-2{
   position: absolute;
@@ -530,4 +574,133 @@ footer{
   right: -15%;
   top: 20px
 }
+}
+
+@media screen and (min-width: 992px) {
+  .presentation-2-txt-bg-img, .about-me-txt-background {
+    width: 60%;
+    left: 20%;
+  }
+
+  .about-me-txt-background {
+    top: 32%;
+  }
+
+  .presentation-2, .about-me-txt, #contact{
+    margin: 3% 15%;
+  }
+
+  .small-img{
+    width: 5%;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+
+  .presentation-2, .about-me-txt, #contact{
+    padding: 0 5%;
+  }
+  
+  .between-section-img {
+    width: 35vw;
+    border-radius: 0 50%;
+  }
+
+  .marlene-haidopoulo{
+    width: 15%;
+  }
+
+  .presentation-2-txt-bg-img, .about-me-txt-background {
+    width: 50%;
+    left: 25%;
+  }
+
+  /*presentation-section*/
+ 
+  .about-title{
+    padding: 0 35%;
+  }
+
+  .about-txt{
+    padding: 0 30%;
+  }
+
+  .about-img{
+    width: 15%;
+  }
+
+  .about-img-lg{
+    width: 25%;
+  }
+
+  .img-1{
+    position: relative;
+    left: 55%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+
+  .presentation-2-txt-bg-img, .about-me-txt-background {
+    width: 40%;
+    left: 30%;
+  }
+
+  .presentation-2, .about-me-txt, #contact{
+    margin: 0 15%;
+    padding: 0 10%;
+  }
+
+   /*footer*/
+
+   footer{
+    padding: 0.5rem;
+  }
+
+  .copyright{
+    margin: 1%;
+    padding: 1%;
+  }
+}
+
+@media screen and (min-width: 1640px) {
+  .about-img{
+    width:12%;
+    }
+  
+    .about-img-lg{
+    width: 20%;
+    }
+  
+    .img-1{
+    position: relative;
+    left: 59%;
+    }
+
+    .about-title {
+      font-size: 3.2rem;
+      padding: 0 30%;
+    }
+  
+    .about-txt{
+      font-size: 1.3rem;
+    } 
+
+    .about-me-txt-background{
+      width: 33%;
+      left: 33%;
+    }
+}
+
+@media (orientation: landscape) {
+  .intro {
+    min-height: 616px;
+  }
+
+}
+@media (orientation: landscape) and (max-height:573px) {
+  #header {
+    position: static;
+  }
 }

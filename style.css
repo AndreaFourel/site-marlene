@@ -28,17 +28,14 @@ a:hover{
 
 html{
   font-size: 1em;
-  
 }
 
 body {
   background-color: var(--main-bg-color);
   overflow-x: hidden;
-  max-width: 320px;
-  position: relative;
+  font-weight: 500;
   color: var(--text-dark-color);
-  max-width: 100vw;
-  height: fit-content;
+
 }
 
 p{
@@ -50,11 +47,11 @@ h1, h2, h3 {
   font-family: 'Bad Script', cursive;
   font-weight: bolder;
   margin: 2% 0;
+  text-shadow: 0.2px 0.2px 0.5px black;
 }
 
 h1, h2 {
   font-size: 2rem;
-  text-shadow: 0.2px 0.2px 0.5px black;
 }
 
 h3{
@@ -79,6 +76,16 @@ ul {
 
 /*header*/
 
+.bi-list {
+  font-size: 2rem;
+  color: var(--text-dark-color);
+  text-shadow: 1px 1px 2px black;
+}
+
+#header{
+  background-color: var(--main-bg-color);
+  border-radius: 0 0 5px 5px;
+}
 
 .logo{
   width: 50px;
@@ -92,30 +99,35 @@ ul {
   text-shadow: 0.2px 0.2px 0.5px black;
 }
 
-.bi-list {
-  font-size: 2rem;
-  color: var(--text-dark-color);
-}
-
-#header{
-  /* position: sticky;
-  top: 0;
-  z-index: 100; */
-  background-color: var(--main-bg-color);
-  border-radius: 0 0 5px 5px;
-}
-
-/* .header-shadow {
-  margin: 0;
-  background-color: var(--main-bg-color);
-  box-shadow: 1px 1px 2px black;
-} */
-
 .nav-link:hover {
   color: var(--second-bg-color);
 }
 
 /*about-aymassage section*/
+
+.about-txt{
+  font-size: 0.9rem;
+  padding: 0 22%;
+  text-align: center;
+}
+
+.about-title{
+  font-size: 2.5rem;
+  padding: 0 25%;
+  text-align: center;
+}
+
+.big-title {
+  color: var(--text-light-color);
+  font-size: 3rem; 
+  line-height: 4rem;
+  margin-bottom: 30%;
+  font-weight: 500;
+}
+
+h2.big-title{
+  color: var(--main-bg-color);
+}
 
 .intro {
   background-image: url(images/mandala-background.jpg);
@@ -142,18 +154,6 @@ ul {
   margin-right: 10%;
 }
 
-.big-title {
-  color: var(--text-light-color);
-  font-size: 3rem; 
-  line-height: 4rem;
-  margin-bottom: 30%;
-  font-weight: 500;
-}
-
-h2.big-title{
-  color: var(--main-bg-color);
-}
-
 .presentation {
   position: relative;
   width: 100vw;
@@ -164,14 +164,12 @@ h2.big-title{
 }
 
 .presentation-2{
-  overflow: hidden;
   position: relative;
   margin: 0 2%;
   text-align: center;
 }
 
 .presentation-2-txt{
-  font-weight: 500;
   position: relative;
   z-index: 2;
 }
@@ -180,17 +178,18 @@ h2.big-title{
   margin: 0 0 4% 0;
 }
 
-.about-txt{
-  font-size: 0.9rem;
-  font-weight: 500;
-  padding: 0 22%;
-  text-align: center;
+#up-btn{
+  border-radius: 50%;
+  text-shadow: 1px 1px 2px black;
+  color:var(--text-dark-color);
+  font-size: 2rem;;
+  display: none;
+  position: fixed;
+  bottom:15px;
+  right:15px;
+  z-index: 10;
 }
-.about-title{
-  font-size: 2.5rem;
-  padding: 0 25%;
-  text-align: center;
-}
+
 
 /*about-aymassage section-images*/
 
@@ -324,7 +323,6 @@ img{
   width: 30%;
 }
 
-
 /*footer*/
 
 footer{
@@ -340,6 +338,18 @@ footer{
   color: var(--text-light-color);
 }
 
+.af-link:hover {
+  color: var(--main-bg-color);
+}
+
+.copyright{
+  color: var(--text-light-color);
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 2%;
+  padding: 1%;
+}
+
 .socials{
   display: flex;
   justify-content: center;
@@ -351,18 +361,6 @@ footer{
   padding:1%;
 }
 
-.copyright{
-  color: var(--text-light-color);
-  font-size: 0.9rem;
-  text-align: center;
-  margin: 2%;
-  padding: 1%;
-}
-
-.af-link:hover {
-  color: var(--main-bg-color);
-}
-
 .social-link:hover {
   color: var(--main-bg-color);
 }
@@ -371,6 +369,8 @@ footer{
 
 @media screen and (min-width: 400px) {
   
+  /* bg-img position */
+
   .presentation-2-txt-bg-img{
     top: 20%;
   }
@@ -378,6 +378,8 @@ footer{
 }
 
 @media screen and (min-width: 453px) {
+
+  /* bg-imgs position & margin set*/
   
   .presentation-2-txt-bg-img{
     top: 8%;
@@ -394,6 +396,8 @@ footer{
 }
 
 @media screen and (min-width: 574px) {
+
+  /* about-aymassage imgs &  bg-imgs position set*/  
 
   .about-img {
     width: 25%;
@@ -412,6 +416,8 @@ footer{
     left: 10%;
   }
 
+  /* set some imgs width */
+
   .marlene-haidopoulo{
     width: 25%;
   }
@@ -425,6 +431,9 @@ footer{
 }
 
 @media screen and (min-width: 670px) {
+
+  /* new font-sizes set*/
+  
   body{
     font-size: 1.1rem;
   }
@@ -447,6 +456,20 @@ footer{
     font-size: 1.2rem;
   } 
 
+  .card-text{
+    font-size: 1rem;
+  }
+    
+  .socials>.bi {
+    font-size: 2rem;
+  }
+
+  .copyright {
+    font-size: 1rem;
+  }
+
+  /* bg-img position & img width set*/
+
   .presentation-2-txt-bg-img, .about-me-txt-background {
     width: 70%;
     left: 15%;
@@ -454,10 +477,6 @@ footer{
 
   .about-me-txt-background{
     top: 35%;
-  }
-
-  .card-text{
-    font-size: 1rem;
   }
   
   .presentation-2-txt-bg-img{
@@ -472,33 +491,32 @@ footer{
     width: 20%;
   }
 
+  .between-section-img{
+    width: 50vw;
+    height: fit-content;
+  }
+
+  /*margin set*/
+
   .presentation-2, .about-me-txt, #contact{
     margin: 3% 10%;
   }
 
-  .between-section-img{
-    
-    width: 50vw;
-    height: fit-content;
-   
-  }
-  /*footer*/
-
   .socials>.social-link{
     margin: 0 2%;
-  }
-  
-  .socials>.bi {
-    font-size: 2rem;
-  }
-
-  .copyright {
-    font-size: 1rem;
   }
 
 }
 
 @media screen and (min-width: 768px) {
+
+  body{
+    font-size: 1.5rem;
+  }
+  
+  h1, h2 {
+    font-size: 2.5rem;
+  }
   
   /*navbar*/
 
@@ -512,9 +530,10 @@ footer{
   
   .bi-list {
     font-size: 3rem;
-
   }
   
+  /*about-aymasage*/
+
   .anchor{
     height: 250px;
     margin-top: -250px;
@@ -526,11 +545,7 @@ footer{
     margin-bottom: 20%;
   }
 
-  body{
-    font-size: 1.5rem;
-  }
-  
-  h1, h2 {
+  #up-btn {
     font-size: 2.5rem;
   }
 
@@ -556,50 +571,55 @@ footer{
     height: fit-content;
   }
 
-/*presentation-section*/
+  /*presentation-div new img dispaly*/
  
-.presentation {
-  margin-top: 3%;
-  margin-bottom: 0;
-}
+  .presentation {
+    margin-top: 3%;
+    margin-bottom: 0;
+  }
 
-.about-img{
-  width:20%
-}
+  .about-img{
+    width:20%
+  }
 
-.about-img-lg{
-  width: 35%;
-}
+  .about-img-lg{
+    width: 35%;
+  }
 
-.img-1{
-  position: relative;
-  left: 45%;
-}P
+  .img-1{
+    position: relative;
+    left: 45%;
+  }P
 
-.img-2{
-  position: absolute;
-  left: 75%;
-  top: 16%;
-}
+  .img-2{
+    position: absolute;
+    left: 75%;
+    top: 16%;
+  }
 
-.img-3{
-  position: absolute;
-  bottom: 25%;
-  right: 76%;
-}
+  .img-3{
+    position: absolute;
+    bottom: 25%;
+    right: 76%;
+  }
 
-.img-4{
-  position: relative;
-  right: -15%;
-  top: 20px
-}
+  .img-4{
+    position: relative;
+    right: -15%;
+    top: 20px
+  }
 }
 
 @media screen and (min-width: 992px) {
+
+  /*unset anchor due to expand navbar*/
+
   .anchor{
     height: 0;
     margin-top: 0;
   }
+
+  /*bg-imgs, imgs width and margin set*/
 
   .presentation-2-txt-bg-img, .about-me-txt-background {
     width: 60%;
@@ -622,6 +642,8 @@ footer{
 
 @media screen and (min-width: 1200px) {
 
+  /*bg-imgs, imgs width and margin set*/
+
   .presentation-2, .about-me-txt, #contact{
     padding: 0 5%;
   }
@@ -640,7 +662,7 @@ footer{
     left: 25%;
   }
 
-  /*presentation-section*/
+  /*presentation-div & new img dispaly*/
  
   .about-title{
     padding: 0 35%;
@@ -663,7 +685,7 @@ footer{
     left: 55%;
   }
 
-  /*footer -bg*/
+  /*footer -bg higher definition*/
 
   footer {
     background-image: url('images/background-color-lg.jpg');
@@ -671,6 +693,8 @@ footer{
 }
 
 @media screen and (min-width: 1400px) {
+
+  /*bg-imgs and margin set*/
 
   .presentation-2-txt-bg-img, .about-me-txt-background {
     width: 40%;
@@ -695,6 +719,9 @@ footer{
 }
 
 @media screen and (min-width: 1640px) {
+
+  /*presentation-div & new img dispaly*/
+
   .about-img{
     width:12%;
     }
@@ -717,6 +744,8 @@ footer{
       font-size: 1.3rem;
     } 
 
+    /*bg-img*/
+
     .about-me-txt-background{
       width: 33%;
       left: 33%;
@@ -724,8 +753,17 @@ footer{
 }
 
 @media (orientation: landscape) {
+
   .intro {
     min-height: 616px;
   }
 
 }
+
+@media screen and (max-width: 330px) {
+  
+  .img-3{
+    bottom: 12%;
+  }
+}
+

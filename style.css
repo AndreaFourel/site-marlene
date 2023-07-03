@@ -130,7 +130,7 @@ h2.big-title{
 }
 
 .intro {
-  background-image: url(images/mandala-background.jpg);
+  background-image: url(images/mandala-background.webp);
   background-repeat: no-repeat;
   background-size:cover;
   background-position-x: 25%;
@@ -258,7 +258,7 @@ img{
 }
 
 .card-body{
-  background-image: url('images/background-color.jpg');
+  background-image: url('images/background-color.webp');
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--text-light-color);
@@ -326,7 +326,7 @@ img{
 /*footer*/
 
 footer{
-  background-image: url('images/background-color.jpg');
+  background-image: url('images/background-color.webp');
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 4%;
@@ -701,7 +701,7 @@ footer{
   /*footer -bg higher definition*/
 
   footer {
-    background-image: url('images/background-color-lg.jpg');
+    background-image: url('images/background-color-lg.webp');
   }
 }
 

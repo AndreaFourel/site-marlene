@@ -280,6 +280,13 @@ img{
  box-shadow: none;
 }
 
+/*workshops section images*/
+
+.workshop-img {
+  object-fit: contain;
+  height: 400px;
+}
+
 /*about-me section*/
 
 #about-me, #contact, #prices{
@@ -566,7 +573,7 @@ footer{
    font-size: 2rem;
   }
 
-  #about-me, #contact, #prices{
+  #about-me, #contact, #prices {
    margin-top: 4%;
   }
 

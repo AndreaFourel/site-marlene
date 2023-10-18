@@ -680,8 +680,6 @@ footer{
 
 
 @media screen and (min-width: 1200px) {
-  
-
 
   /*bg-imgs, imgs width and margin set*/
 
@@ -738,7 +736,7 @@ footer{
    /*navbar*/
 
  .nav-link {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 
   /*bg-imgs and margin set*/

@@ -41,6 +41,7 @@ body {
 p{
   font-family: 'Hind Siliguri', sans-serif;
   color: var(--text-dark-color);
+  font-display: swap;
 }
 
 h1, h2, h3 {

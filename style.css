@@ -282,11 +282,11 @@ img{
 }
 
 /*workshops section*/
-
-#workshops {
+.workshops {
   position: relative;
 }
-#workshops:before {
+
+.workshops:before {
   content: ' ';
   position: absolute;
   left: 0;

@@ -1,6 +1,8 @@
 const navLinks = document.querySelectorAll('.nav-link');
 const myButton = document.getElementById('up-btn');
-
+document.querySelectorAll(".year").forEach(el => {
+  el.textContent = new Date().getFullYear();
+});
 //hide nav-items when click on a nav-item
 
 navLinks.forEach(navLink => {

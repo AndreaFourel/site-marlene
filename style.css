@@ -221,13 +221,13 @@ img{
 .img-3{
   position: absolute;
   bottom: 15%;
-  right: 80%;
+  right: 79%;
   z-index:2;
 }
 
 .img-4{
   position: relative;
-  right: 2%;
+  right: 1%;
   top: 30px
 }
 
@@ -556,7 +556,7 @@ footer{
   .logo{
     width: 70px;
   }
-  
+
   .logo-txt, .nav-link {
     font-size: 1.5rem;
   }

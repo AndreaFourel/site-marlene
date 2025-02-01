@@ -271,6 +271,10 @@ img{
   height: 130px;
 }
 
+.smaller-fonts{
+  font-size: 0.8rem;
+}
+
 /*price section-images*/
 
 .card-img-top{
@@ -280,6 +284,7 @@ img{
  object-fit: cover;
  box-shadow: none;
 }
+
 
 /*workshops section*/
 .workshops {
@@ -448,7 +453,10 @@ footer{
     width: 80%;
     left: 10%;
   }
-
+ /* forfaits card text */
+  .smaller-fonts{
+    font-size: 0.7rem;
+  }
   /* set some imgs width */
 
   .marlene-haidopoulo{
@@ -492,6 +500,10 @@ footer{
   .card-text{
     font-size: 1rem;
   }
+  .smaller-fonts{
+    font-size: 0.7rem;
+  }
+  
     
   .socials>.bi {
     font-size: 2rem;
@@ -700,6 +712,9 @@ footer{
   .presentation-2-txt-bg-img, .about-me-txt-background {
     width: 50%;
     left: 25%;
+  }
+  .smaller-fonts{
+    font-size: 0.9rem;
   }
 
   /*presentation-div & new img dispaly*/

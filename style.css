@@ -5,8 +5,8 @@
 /*basic*/
 
 :root {
-  --main-bg-color: #C6B4CE;
-  --second-bg-color: #9963ac;
+  --main-bg-color: #E8D8DC;
+  --second-bg-color: #A67BA2;
   --text-light-color: #FFF5DE;
   --text-dark-color: #3C5186;
 }
@@ -199,6 +199,14 @@ img{
   box-shadow: 1px 1px 2px #000;
 }
 
+.double-card-img {
+  border-radius: 0;
+  box-shadow: none;
+  width: 50%;
+  height: 200px;        
+  object-fit: cover;
+}
+
 .about-img{
   width:30%
 }
@@ -259,7 +267,7 @@ img{
 }
 
 .card-body{
-  background-image: url('images/background-color.webp');
+  background-color: var(--second-bg-color);
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--text-light-color);
@@ -351,7 +359,7 @@ img{
 /*footer*/
 
 footer{
-  background-image: url('images/background-color.webp');
+  background-color: var(--second-bg-color);
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 4%;
@@ -743,7 +751,7 @@ footer{
   /*footer -bg higher definition*/
 
   footer {
-    background-image: url('images/background-color-lg.webp');
+    background-color: var(--second-bg-color);
   }
 }
 
